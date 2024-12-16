@@ -35,7 +35,7 @@ const PointBreakdownChart = ({ breakdown, customLabels, width }) => {
   };
 
   return (
-    <PieChart width={width} height={500}>
+    <PieChart width={width} height={400}>
       <Pie
         data={data}
         dataKey="value"

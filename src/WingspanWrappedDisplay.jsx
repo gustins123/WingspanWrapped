@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import PointBreakdownChart from "./PointBreakdownChart";
 import logo from './assets/images/Wingspan.png';
 import bgImage from './assets/images/watercolor-blue.webp';
-
+import arrow from './assets/svg/arrow_down.svg';
 
 
 const WingspanWrappedDisplay = ({ stats }) => {
@@ -63,9 +63,11 @@ const WingspanWrappedDisplay = ({ stats }) => {
       filter: `hue-rotate(${hue}deg)`, // Apply dynamic hue rotation
     }}
     >
-      <div className="h-screen w-screen snap-center justify-center">
+      <div className="h-screen w-screen snap-center flex justify-between flex-col items-center">
         <img src={logo} alt="wingspan logo" className="mx-auto mb-4"/>
+        <img className="animate-bounce w-20 h-20" src={arrow} alt="arrow" />
       </div>
+      
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
         <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">You like to play wingspan, dont you?</p> 
@@ -111,7 +113,7 @@ const WingspanWrappedDisplay = ({ stats }) => {
         >Your winrate is  <span className="font-bold">{stats.winrate}</span>%</p>
       </div>
 
-      <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
+      <div className="h-screen w-screen snap-center flex justify-around flex-col items-center text-white text-center p-6">
         <div className="pt-10">
           <table className="min-w-full bg-gray-200 bg-opacity-30 text-gray-700 border-collapse" style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
             <tbody>
@@ -160,7 +162,7 @@ const WingspanWrappedDisplay = ({ stats }) => {
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalTuckedCards}</td>
               </tr>
               <tr>
-                <td colSpan="2" className="px-1 py-1 font-bold border-t border-r border-gray-700">Total</td>
+                <td colSpan="2" className="px-1 py-1 font-bold border-t border-r border-gray-700">Total Points</td>
                 <td className="px-1 py-1 border-t border-r border-gray-700">{stats.averagePoints}</td>
                 <td className="px-1 py-1 border-t border-r border-gray-700">{stats.maxPoints}</td>
                 <td className="px-1 py-1 border-t border-gray-700">{stats.totalPoints}</td>
