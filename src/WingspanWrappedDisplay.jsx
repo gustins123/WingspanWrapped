@@ -65,7 +65,7 @@ const WingspanWrappedDisplay = ({ stats }) => {
     >
       <div className="h-screen w-screen snap-center flex justify-between flex-col items-center">
         <img src={logo} alt="wingspan logo" className="mx-auto mb-4"/>
-        <img className="animate-bounce w-20 h-20" src={arrow} alt="arrow" />
+        <img className="animate-bounce h-20 mb-10" src={arrow} alt="arrow" />
       </div>
       
 
@@ -81,7 +81,7 @@ const WingspanWrappedDisplay = ({ stats }) => {
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
-        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">End of year is coming but it means a good thing for you because you on average got <span className="font-bold">{stats.averageRoundPoints}</span> end of round points.</p>
+        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">End of year is coming but it means a good thing for you because you on average got <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.averageRoundPoints}</span> end of round points.</p>
           <p className="text-3xl mt-4 bg-auto bg-center bg-opacity-10 [text-shadow:_0_0_5px_rgb(0_0_0_/_30%)]"
         style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}
         >Your best score was <span className="font-bold">{stats.maxRoundPoints}</span></p>
@@ -89,7 +89,7 @@ const WingspanWrappedDisplay = ({ stats }) => {
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
         <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">
-        Egg-cellent work! You laid a total of <span className="font-bold">{stats.totalEggs}</span> eggs this year. Thats <span className="font-bold">{stats.averageEggs}</span> per game.</p>
+        Egg-cellent work! You laid a total of <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.totalEggs}</span> eggs this year. Thats <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.averageEggs}</span> per game.</p>
           <p className="text-3xl mt-4 bg-auto bg-center bg-opacity-10 [text-shadow:_0_0_5px_rgb(0_0_0_/_30%)]"
         style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}
         >Your high score was <span className="font-bold">{stats.maxEggs}</span></p>
@@ -113,7 +113,7 @@ const WingspanWrappedDisplay = ({ stats }) => {
         >Your winrate is  <span className="font-bold">{stats.winrate}</span>%</p>
       </div>
 
-      <div className="h-screen w-screen snap-center flex justify-around flex-col items-center text-white text-center p-6">
+      <div className="h-screen w-screen snap-center flex justify-around flex-col items-center text-white text-center p-5">
         <div className="pt-10">
           <table className="min-w-full bg-gray-200 bg-opacity-30 text-gray-700 border-collapse" style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
             <tbody>
