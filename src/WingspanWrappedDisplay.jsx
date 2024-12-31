@@ -35,14 +35,6 @@ const WingspanWrappedDisplay = ({ stats }) => {
       divElement.removeEventListener("scroll", handleScroll); // Cleanup
     };
   }, [scrollY]);
-
-  const data = [
-    { gameId: 1, playerName: 'John', birds: 10, bonusCards: 2, goals: 3, eggs: 5, foodOnCards: 3, tuckedCards: 1, totalPoints: 75, place: 1 },
-    { gameId: 2, playerName: 'Sarah', birds: 8, bonusCards: 3, goals: 2, eggs: 6, foodOnCards: 4, tuckedCards: 2, totalPoints: 65, place: 2 },
-    { gameId: 3, playerName: 'Mike', birds: 12, bonusCards: 1, goals: 4, eggs: 7, foodOnCards: 2, tuckedCards: 0, totalPoints: 80, place: 1 },
-    { gameId: 4, playerName: 'Alice', birds: 9, bonusCards: 2, goals: 3, eggs: 8, foodOnCards: 3, tuckedCards: 1, totalPoints: 70, place: 3 },
-    { gameId: 5, playerName: 'Bob', birds: 11, bonusCards: 4, goals: 2, eggs: 6, foodOnCards: 5, tuckedCards: 3, totalPoints: 85, place: 1 },
-  ];
   
 
   const customLabels = [
