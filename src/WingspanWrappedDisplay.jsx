@@ -62,99 +62,99 @@ const WingspanWrappedDisplay = ({ stats }) => {
       
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
-        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">You like to play wingspan, dont you?</p> 
+        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">Šogad tu lidinājies daudz</p> 
         <p className="text-3xl mt-4 bg-auto bg-center bg-opacity-10 [text-shadow:_0_0_5px_rgb(0_0_0_/_30%)]"
         style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}
-        >You played <span className="font-bold">{stats.playerGames}</span> games this year. You're in the top <span className="font-bold">{stats.topPercent}%</span></p>
+        ><span className="font-semibold">{stats.playerGames}</span> spēles! Tas tevi ierindo starp izredzētajiem  <span className="font-semibold">{stats.topPercent}%</span> spēlētāju</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
-        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">Bonus cards isnt your thing but they still contributed for <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.breakdown.bonusCardPercentage}%</span> of your score</p>
+        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">Bonusa kārtis varbūt nav tava galvenā stratēģija, bet pat tās palīdzēja ar  <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.breakdown.bonusCardPercentage}%</span> punktu</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
-        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">End of year is coming but it means a good thing for you because you on average got <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.averageRoundPoints}</span> end of round points.</p>
+        <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">Kad pienāk raunda beigas, tu vienmēr uzspīdi. Vidēji tu savāc  <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.averageRoundPoints}</span> punktus.</p>
           <p className="text-3xl mt-4 bg-auto bg-center bg-opacity-10 [text-shadow:_0_0_5px_rgb(0_0_0_/_30%)]"
         style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}
-        >Your best score was <span className="font-bold">{stats.maxRoundPoints}</span></p>
+        >Vienā spēlē tu pat sasniedzi <span className="font-semibold">{stats.maxRoundPoints}</span>. Iespaidīgi, vai ne?</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
         <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]">
-        Egg-cellent work! You laid a total of <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.totalEggs}</span> eggs this year. Thats <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.averageEggs}</span> per game.</p>
+        Olas ir tava spēles sirds un dvēsele – šogad tu izdēji <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.totalEggs}</span> olas! Tas ir <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.averageEggs}</span> olas spēlē.</p>
           <p className="text-3xl mt-4 bg-auto bg-center bg-opacity-10 [text-shadow:_0_0_5px_rgb(0_0_0_/_30%)]"
         style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}
-        >Your high score was <span className="font-bold">{stats.maxEggs}</span></p>
+        >Tavs labākais rezultāts ir <span className="font-semibold">{stats.maxEggs}</span> olas vienā spēlē!</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
         <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]"
-        >You've got a knack for secrecy! You tucked <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.totalTuckedCards}</span> cards this year, hiding away some secret strategies. No one saw that coming!</p>
+        >Un kā ar aizliktajām kārtīm? Tu aizliki <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.totalTuckedCards}</span> kārtis, saglabājot savas stratēģijas noslēpumu līdz pēdējam brīdim. Tavi sāncenši palika mēmi!</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
         <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]"
-        >Talk about a showstopper! Your best game was an absolute masterpiece with <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.maxPoints}</span> points. That’s your highest score yet. Way to go!</p>
+        >Tava labākā spēle bija īsts triumfs ar <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.maxPoints}</span> punktiem. Tāds rezultāts paliks atmiņā vēl ilgi!</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-center flex-col items-center text-white text-center p-6">
         <p className="text-4xl font-semibold mb-4 [text-shadow:_0_0_9px_rgb(0_0_0_/_30%)]"
-        >You finished in 1st place <span className="font-bold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.winCount}</span> times this year. Clearly, you’re a top contender every time you play!</p>
+        >Tu uzvarēji <span className="font-semibold" style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}>{stats.winCount}</span> spēlēs šogad, pierādot, ka ar tevi sacensties nav viegli.</p>
         <p className="text-3xl mt-4 bg-auto bg-center bg-opacity-10 [text-shadow:_0_0_5px_rgb(0_0_0_/_30%)]"
         style={{ backgroundImage: 'url(https://wingspan.rulepop.com/media/brush-teal-long.webp)', backgroundSize: '100% 100%' }}
-        >Your winrate is  <span className="font-bold">{stats.winrate}</span>%</p>
+        >Tavs uzvaru procents ir <span className="font-semibold">{stats.winrate}</span>%</p>
       </div>
 
       <div className="h-screen w-screen snap-center flex justify-around flex-col items-center text-white text-center p-5">
         <div className="pt-10">
           <table className="min-w-full bg-gray-200 bg-opacity-30 text-gray-700 border-collapse" style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
             <tbody>
-              <tr className="font-bold" >
+              <tr className="font-semibold" >
                 <td colSpan="2" className="px-1 py-1 border-b border-r border-gray-700">{stats.playerName.toUpperCase()}</td>
-                <td className="px-1 py-1 w-1/6 border-b border-r border-gray-700">Average</td>
+                <td className="px-1 py-1 w-1/6 border-b border-r border-gray-700">Vidējais</td>
                 <td className="px-1 py-1 w-1/6 border-b border-r border-gray-700">Max</td>
-                <td className="px-1 py-1 w-1/6 border-b border-gray-700">Total</td>
+                <td className="px-1 py-1 w-1/6 border-b border-gray-700">Kopā</td>
               </tr>
               <tr>
-                <td rowSpan="3" className="px-1 py-1 w-1/6 transform rotate-[-90deg] font-bold border-r border-b border-gray-700">AMOUNT ON CARDS</td>
-                <td className="px-1 py-1 border-b border-r border-gray-700">Birds</td>
+                <td rowSpan="3" className="px-1 py-1 w-1/6 transform rotate-[-90deg] font-semibold border-r border-b border-gray-700">PUNKTU DAUDZUMS, KURŠ NORĀDĪTS UZ</td>
+                <td className="px-1 py-1 border-b border-r border-gray-700">Putnu kārtīm</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.averageBirdPoints}</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.maxBirdPoints}</td>
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalBirdPoints}</td>
               </tr>
               <tr>
-                <td className="px-1 py-1 border-b border-r border-gray-700">Bonus cards</td>
+                <td className="px-1 py-1 border-b border-r border-gray-700">Bonusu kārtīm</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.averageBonusPoints}</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.maxBonusPoints}</td>
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalBonusPoints}</td>
               </tr>
               <tr>
-                <td className="px-1 py-1 border-b border-r border-gray-700">End-of-round Goals</td>
+                <td className="px-1 py-1 border-b border-r border-gray-700">Raunda beigu mērķiem</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.averageRoundPoints}</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.maxRoundPoints}</td>
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalRoundPoints}</td>
               </tr>
               <tr>
-                <td rowSpan="3" className="px-1 py-1 transform rotate-[-90deg] font-bold border-r border-gray-700">1 POINT EACH</td>
-                <td className="px-1 py-1 border-b border-r border-gray-700">Eggs</td>
+                <td rowSpan="3" className="px-1 py-1 transform rotate-[-90deg] font-semibold border-r border-gray-700">1 PUNKTS PAR KATRU</td>
+                <td className="px-1 py-1 border-b border-r border-gray-700">Olu</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.averageEggs}</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.maxEggs}</td>
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalEggs}</td>
               </tr>
               <tr>
-                <td className="px-1 py-1 border-b border-r border-gray-700">Food on cards</td>
+                <td className="px-1 py-1 border-b border-r border-gray-700">Ēdiena žetonu uz kārtīm</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.averageFoodOnCards}</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.maxFoodOnCards}</td>
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalFoodOnCards}</td>
               </tr>
               <tr>
-                <td className="px-1 py-1 border-b border-r border-gray-700">Tucked cards</td>
+                <td className="px-1 py-1 border-b border-r border-gray-700">Aizlikto kārti</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.averageTuckedCards}</td>
                 <td className="px-1 py-1 border-b border-r border-gray-700">{stats.maxTuckedCards}</td>
                 <td className="px-1 py-1 border-b border-gray-700">{stats.totalTuckedCards}</td>
               </tr>
               <tr>
-                <td colSpan="2" className="px-1 py-1 font-bold border-t border-r border-gray-700">Total Points</td>
+                <td colSpan="2" className="px-1 py-1 font-semibold border-t border-r border-gray-700">KOPĒJIE PUNKTI</td>
                 <td className="px-1 py-1 border-t border-r border-gray-700">{stats.averagePoints}</td>
                 <td className="px-1 py-1 border-t border-r border-gray-700">{stats.maxPoints}</td>
                 <td className="px-1 py-1 border-t border-gray-700">{stats.totalPoints}</td>

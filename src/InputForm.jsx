@@ -9,7 +9,7 @@ const InputForm = ({ playerName, setPlayerName, onSubmit }) => (
       <input
         type="text"
         className="border rounded px-4 py-2 mb-4 w-64"
-        placeholder="Enter Player Name"
+        placeholder="Ieraksti savu vārdu"
         value={playerName}
         onChange={(e) => setPlayerName(e.target.value)}
       />
@@ -17,7 +17,7 @@ const InputForm = ({ playerName, setPlayerName, onSubmit }) => (
         onClick={onSubmit}
         className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
       >
-        Fly Away!
+        Aiziet!
       </button>
     </div>
   </div>
